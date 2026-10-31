@@ -10,3 +10,10 @@
 /* Beta bug 001: explicit search and page-based touch browsing; desktop geometry retained. */
 .search-field{display:flex;flex-direction:column;gap:7px;min-width:0}.search-row{display:flex;gap:8px;align-items:stretch;min-width:0}.search-row input{flex:1;min-width:0}.search-row button{flex:0 0 auto;min-height:46px;padding:10px 14px;font-size:13px}
 @media(max-width:800px){.results{max-height:none;overflow:visible;grid-template-columns:1fr}.airline-item strong{font-size:16px}.airline-item .scheme-name{font-size:14px}.airline-item small{font-size:12px}.airline-item{padding:16px}.pages button{font-size:13px;min-width:76px}.pages{font-size:12px}.search-row button{min-width:80px}}
+
+/* Bug 002: visible feedback for explicit Search/Enter submissions. */
+.search-feedback{margin:12px 0;padding:12px 14px;border:1px solid #c7a66570;border-radius:7px;background:#cfad6812;color:var(--gold);font-size:14px;line-height:1.6}
+.empty strong{display:block;color:var(--gold);font-size:16px}
+
+/* Bug 002 mobile expansion: append-only batches with normal document scrolling. */
+.pages[hidden],.mobile-more[hidden],.return-results[hidden]{display:none}.mobile-more{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:18px}.mobile-more p{font-size:12px;color:var(--muted);margin:0}.mobile-more button{min-width:156px;min-height:44px}.return-results{min-height:44px}
